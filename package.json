@@ -2,9 +2,11 @@
   "name": "@carchain/cities",
   "version": "1.0.0",
   "description": "A library to separate the cities in Carchain",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc && npm pack",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,18 @@
   "bugs": {
     "url": "https://github.com/rezarazani/Carchain-Cities/issues"
   },
-  "homepage": "https://github.com/rezarazani/Carchain-Cities#readme"
+  "homepage": "https://github.com/rezarazani/Carchain-Cities#readme",
+  "devDependencies": {
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-angular": "^12.1.1",
+    "@commitlint/config-conventional": "^11.0.0",
+    "@types/node": "^14.14.37",
+    "husky": "^6.0.0"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "typescript": "^4.2.4"
+  }
 }

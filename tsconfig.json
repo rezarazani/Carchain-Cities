@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+      "target": "ES6",
+      "outDir": "./dist",
+      "rootDir": "./src",
+      "module": "commonjs",
+      "lib": [
+        "ES6","DOM"
+      ],
+      "baseUrl": "./src",
+      "declaration": true,
+      // "noUnusedParameters": true,
+      "strictNullChecks": true,
+      "strictPropertyInitialization": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "allowJs": false
+  },
+  "exclude": [
+    "./node_modules/**/*",
+    "./dist/**/*"
+  ]
+}
