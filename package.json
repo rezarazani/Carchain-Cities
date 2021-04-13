@@ -1,6 +1,6 @@
 {
   "name": "@carchain/cities",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library to separate the cities in Carchain",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -8,7 +8,6 @@
     "build": "tsc && npm pack",
     "prepare": "husky install",
     "release": "standard-version"
-
   },
   "repository": {
     "type": "git",
