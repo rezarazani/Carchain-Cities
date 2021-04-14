@@ -10,10 +10,10 @@
       "baseUrl": "./src",
       "declaration": true,
       // "noUnusedParameters": true,
-      "strictNullChecks": true,
-      "strictPropertyInitialization": true,
-      "experimentalDecorators": true,
-      "emitDecoratorMetadata": true,
+      // "strictNullChecks": true,
+      // "strictPropertyInitialization": true,
+      // "experimentalDecorators": true,
+      // "emitDecoratorMetadata": true,
       "allowJs": false
   },
   "exclude": [
