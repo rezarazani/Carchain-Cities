@@ -1,6 +1,6 @@
-import { Country, CountryInterface } from '../../interface/country';
-import { countries } from '../../data/country';
-import { CountryCode } from '../../data/country/code';
+import { Country, CountryInterface } from '../interface';
+import { countries } from '../data';
+import { CountryCode } from '../data/code';
 import * as _ from "lodash";
 import * as turf from "@turf/turf";
 
@@ -9,21 +9,12 @@ export class CountryClass implements CountryInterface {
   constructor(private _countries: Array <Country>) {}
  
 
-  public findById(id: String): Country  {
-    const result =  _.find(this._countries , {id : id});
-    if(!result){
-      throw new Error("Country not found");
-    }
-    return result ;
+  public findById(id: String): Country | undefined  {
+    return  _.find(this._countries , {id : id});
   }
 
-  public findByCode(code: CountryCode): Country {
-    const result =  _.find(this._countries , {code : code});
-    if(!result){
-      throw new Error("Country not found");
-    }
-    return result ;
-
+  public findByCode(code: CountryCode): Country | undefined{
+    return  _.find(this._countries , {code : code});
   }
 
   public find(filter: Partial<Country>): Country[] {

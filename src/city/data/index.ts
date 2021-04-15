@@ -1,5 +1,4 @@
-import { City } from '../../interface/cities';
-import { CountryMethods } from '../../class/country' ;
+import { City } from '../interface';
 
 /**
  * 
@@ -10,7 +9,8 @@ import { CountryMethods } from '../../class/country' ;
 export const cities: Array < City > = [
     {
         id : 't1' ,
-        Country : CountryMethods.findByCode('IRN')  ,
+        countryCode : 'IRN' ,
+        countryGlobalName : 'Iran, Islamic Republic of',
         name : {
             en : 'tehran',
             fa : 'تهران'
@@ -33,7 +33,8 @@ export const cities: Array < City > = [
     },
     {
         id : 't2' ,
-        Country : CountryMethods.findByCode('IRN')  ,
+        countryCode : 'IRN' ,
+        countryGlobalName : 'Iran, Islamic Republic of',
         name : {
             en : 'isfahan',
             fa : 'اصفهان'
@@ -55,7 +56,8 @@ export const cities: Array < City > = [
     },
     {
         id : 't3' ,
-        Country : CountryMethods.findByCode('IRN')  ,
+        countryCode : 'IRN' ,
+        countryGlobalName : 'Iran, Islamic Republic of',
         name : {
             en : 'mashhad',
             fa : 'مشهد'

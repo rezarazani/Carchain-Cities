@@ -1,10 +1,11 @@
-import { Multilingual } from "../../../helper/interfaces/multilingual";
-import { Point, PolygonGeoJSON } from "../../../helper/interfaces/geojson";
-import { Country } from "../country";
+import { Multilingual } from "../../helper/interfaces/multilingual";
+import { Point, PolygonGeoJSON } from "../../helper/interfaces/geojson";
+import { Country } from "../../country/interface";
 
 export type City = {
     id : String ,
-    Country : Country   ,
+    countryCode : Country['code']   ,
+    countryGlobalName : Country['globalName']   ,
     name : Multilingual ,
     center : Point ,
     location : PolygonGeoJSON ,

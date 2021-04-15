@@ -1,4 +1,4 @@
-import { Country } from '../../interface/country';
+import { Country } from '../interface';
 
 /**
  * 

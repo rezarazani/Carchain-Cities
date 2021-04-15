@@ -1,7 +1,7 @@
-import { Multilingual } from "../../../helper/interfaces/multilingual";
-import { PolygonGeoJSON, Point } from "../../../helper/interfaces/geojson";
-import { CountryCode } from '../../data/country/code'
-import { CountryName } from '../../data/country/name'
+import { Multilingual } from "../../helper/interfaces/multilingual";
+import { PolygonGeoJSON, Point } from "../../helper/interfaces/geojson";
+import { CountryCode } from '../data/code'
+import { CountryName } from '../data/name'
 
 export type Country = {
     id : String ,
@@ -15,8 +15,8 @@ export type Country = {
 
 
 export interface CountryInterface {
-    findById(id : Country['id']) : Country  ;
-    findByCode(code : Country['code']) : Country  ;
+    findById(id : Country['id']) : Country | undefined ;
+    findByCode(code : Country['code']) : Country | undefined  ;
     find(filter : Partial<Country>) : Country[]  ;
     searchPoint(lon : number , lat : number ) : Country | null  ;
 

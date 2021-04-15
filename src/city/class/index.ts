@@ -1,5 +1,5 @@
-import { City , CityInterface} from '../../interface/cities';
-import { cities } from '../../data/cities';
+import { City , CityInterface} from '../interface';
+import { cities } from '../data';
 import * as _ from "lodash";
 import * as turf from "@turf/turf";
 
