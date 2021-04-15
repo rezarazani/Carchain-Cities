@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.2](https://github.com/rezarazani/Carchain-Cities/compare/v1.1.1...v1.1.2) (2021-04-15)
+
+
+### Bug Fixes
+
+* changing structure ([929f428](https://github.com/rezarazani/Carchain-Cities/commit/929f428170cd3983ec1e3b0f06f8a9c91fb90d8b))
+
 ### [1.1.1](https://github.com/rezarazani/Carchain-Cities/compare/v1.1.0...v1.1.1) (2021-04-15)
 
 
