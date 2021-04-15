@@ -76,7 +76,7 @@ export const cities: Array < City > = [
               ]
           ]
         },
-        isActive : false 
+        isActive : true 
     },
     
 
