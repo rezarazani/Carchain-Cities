@@ -76,25 +76,6 @@ export const cities: Array < City > = [
         },
         isActive : false 
     },
-    {
-        id : 't4' ,
-        Country : CountryMethods.findByCode('IRQ')  ,
-        name : {
-            en : 'test',
-            fa : 'مشهد'
-        },
-        center : [59.616919 ,36.291884] ,
-        location : {
-          "type": "Polygon",
-          "coordinates": [
-              [
-                  [59.344, 36.528],
-                  [59.722, 36.531],
-                  [59.344, 36.528]
-              ]
-          ]
-        },
-        isActive : false 
-    }
+    
 
 ]
